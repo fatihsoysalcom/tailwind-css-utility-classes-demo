@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Utility Classes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container mx-auto p-8">
+        <h1 class="text-4xl font-bold mb-6 text-center text-gray-800">Tailwind CSS ile Ölçeklenebilir Tasarım</h1>
+
+        <p class="text-lg text-gray-600 mb-8 text-center">Bu örnek, Tailwind CSS'in yardımcı sınıflarını (utility classes) kullanarak hızlı ve ölçeklenebilir arayüzler oluşturmayı gösterir.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Kart 1: Temel Stil -->
+            <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:scale-105">
+                <h2 class="text-2xl font-semibold mb-3 text-blue-700">Kart Başlığı 1</h2>
+                <p class="text-gray-700 mb-4">Bu kart, temel Tailwind CSS sınıfları ile stilize edilmiştir. Arka plan rengi, yuvarlak köşeler, gölge ve dolgu gibi özellikler doğrudan HTML elementine uygulanmıştır.</p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Daha Fazla Bilgi</button>
+            </div>
+
+            <!-- Kart 2: Farklı Renk ve Boyut -->
+            <div class="bg-green-50 rounded-xl shadow-lg p-5 border-l-4 border-green-400">
+                <h2 class="text-xl font-bold mb-2 text-green-800">Kart Başlığı 2</h2>
+                <p class="text-sm text-gray-600 mb-3">Bu kart, farklı bir arka plan rengi, kenarlık stili ve yazı tipi boyutu kullanılarak oluşturulmuştur. Responsive tasarım için `md:` öneki kullanılmıştır.</p>
+                <a href="#" class="text-green-600 hover:underline font-medium">Detaylar</a>
+            </div>
+
+            <!-- Kart 3: Flexbox ve Padding -->
+            <div class="bg-yellow-100 rounded-lg p-4 flex items-center justify-between">
+                <div class="flex-grow mr-4">
+                    <h3 class="text-lg font-semibold text-yellow-800">Önemli Bildirim</h3>
+                    <p class="text-xs text-yellow-700">Bu, flexbox ile hizalanmış bir öğedir.</p>
+                </div>
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-white text-xs font-bold py-1 px-3 rounded">Eylem</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
